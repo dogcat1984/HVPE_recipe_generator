@@ -11,7 +11,6 @@ from dealLine import *
 from dealRepeat import *
 from mysettings import *
 
-
 def saveRecipe(myPara):
     file = myPara.sourceFile
     file_dir = os.path.dirname(file)
@@ -110,8 +109,7 @@ def totalTime(list):
     time = 0
     for i in range(1,len(list)):
         time = time+list[i][position]
-    return time
-    
+    return time    
 
 def processData(app,dataList,myPara):
     #处理线性变化
@@ -163,8 +161,7 @@ def press_action(button):
         exfileFolder=app.getEntry("菜单导出路径")
         sFolder=app.getEntry("源菜单路径")
         file=app.getEntry("源菜单")
-        saveSetting(stepTime,growthRateFactor,enginearName,exfileFolder,sFolder,file)
- 
+        saveSetting(stepTime,growthRateFactor,enginearName,exfileFolder,sFolder,file) 
 
 app = gui("HVPE菜单生成器")
 
