@@ -127,11 +127,7 @@ def stopLoop(dataList):
     for i in dataList:
         if i[0]=="L" or i[0]=="R":
             flag = False
-    return flag         
-
-def displayDataList(dataList):
-    for i in dataList:
-        print(i)
+    return flag
 
 def press_select(button):
     if button=="button1":
