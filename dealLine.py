@@ -69,6 +69,3 @@ def insertModLineLine(remainder,newRows,dataList,position):
         value=dataList[position][j]
         newLine.append(cp.deepcopy(value))            
     dataList.insert(position+newRows+1,newLine)
-    
-    
-
